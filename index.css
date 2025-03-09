@@ -1,0 +1,75 @@
+/* Center the container */
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Button styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+    position: relative;
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Hover effect with glow for enabled buttons */
+button:not(:disabled):hover {
+    background-color: #45a049;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.7);
+    transform: scale(1.05);
+}
+
+/* Click animation */
+button:not(:disabled):active {
+    transform: scale(0.95);
+}
+
+/* Disabled button styling */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Focus state for accessibility */
+button:focus {
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+/* Status message styling */
+.status-message {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #333;
+    transition: opacity 0.3s ease;
+}
+
+/* Reset button styling */
+.reset-button {
+    background-color: #f44336;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.reset-button:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 0 15px rgba(244, 67, 54, 0.7);
+    transform: scale(1.05);
+}
+
+.reset-button:active {
+    transform: scale(0.95);
+}
+
+.reset-button:focus {
+    box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.5);
+}
